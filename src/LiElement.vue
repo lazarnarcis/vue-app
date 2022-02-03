@@ -1,5 +1,5 @@
 <template>
-    <li>{{title}}</li>
+    <li @click="showTitle()">{{title}}</li>
 </template>
 
 <script>
@@ -8,5 +8,10 @@
         props: {
             title: String
         },
+        methods: {
+            showTitle() {
+                console.log(this.title);
+            }
+        }
     }
 </script>
